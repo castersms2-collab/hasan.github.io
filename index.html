@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:25px 10%;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    z-index:100;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(5px);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#bdbdbd;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.hero img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:grayscale(100%);
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.content{
+    position:relative;
+    text-align:center;
+    z-index:2;
+}
+
+.content h2{
+    font-weight:300;
+    font-size:50px;
+}
+
+.content h1{
+    font-size:85px;
+    font-weight:700;
+}
+
+.content p{
+    margin-top:10px;
+    letter-spacing:4px;
+    color:#d0d0d0;
+}
+
+/* Section */
+section{
+    padding:100px 10%;
+    background:#1a1a1a;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:#222;
+    padding:30px;
+    border-radius:10px;
+    color:#ddd;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#">HOME</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#resume">RESUME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+<section class="hero">
+
+    <!-- Ganti foto.jpg dengan foto Anda -->
+    <img src="img/hero.png" alt="Profile">
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h2>Hello, I'm</h2>
+        <h1>HASAN POHAN</h1>
+        <p>AND THIS IS MY PORTFOLIO</p>
+    </div>
+
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+    <div class="card">
+          Seorang IT Infrastructure & Network Engineer yang berdedikasi dengan pengalaman lebih dari 
+        2012 tahun dalam merancang, mengimplementasikan, dan memelihara infrastruktur jaringan perusahaan
+         yang handal dan aman. Memiliki keahlian mendalam dalam konfigurasi dan troubleshooting 
+         perangkat routing dan switching (Cisco, MikroTik,Tplink), 
+         serta manajemen topologi jaringan skala menengah hingga besar.
+Terbiasa bekerja dalam lingkungan yang dinamis dengan fokus pada pencapaian High Availability (HA), 
+optimasi performa jaringan, dan pemenuhan Service Level Agreement (SLA).
+ Dikenal sebagai pemecah masalah yang analitis, tenang di bawah tekanan,
+  dan mampu menjembatani kesenjangan antara kebutuhan teknis yang kompleks 
+  dengan tujuan bisnis organisasi.
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="title">Portfolio</h2>
+    <div class="card">
+        <h1>Mara Hasan Pohan</h1>
+        <h3>IT Infrastructure & Network Engineer</h3>
+        PENGALAMAN KERJA
+<p>1. PT. BERNOFARM PHARMATEUCAL</p>
+<p>Jakarta, Indonesia</p>
+<p>Senior Network Infrastructure Engineer | Maret 2012 - Januari 2020
+Tanggung Jawab:
+<p>Merancang dan mengimplementasikan infrastruktur jaringan untuk 15 cabang perusahaan di seluruh Indonesia
+Melakukan maintenance dan troubleshooting router & switch (Cisco, MikroTik, Juniper)
+Mengelola tim teknis yang terdiri dari 5 engineer junior
+Implementasi sistem monitoring jaringan 24/7 menggunakan PRTG dan Zabbix</p>
+<P>Pencapaian:</P>
+<p>✅ Meningkatkan network uptime dari 97% menjadi 99.95% dalam 1 tahun</p>
+<p>✅ Berhasil migrasi 500+ perangkat jaringan ke sistem terpusat tanpa downtime</p>
+<p>✅ Mengurangi insiden jaringan sebesar 60% melalui proactive monitoring</p>
+<p>✅ Implementasi SD-WAN yang menghemat biaya bandwidth 35% per tahun</p>
+<p>Teknologi: Cisco IOS/NX-OS, MikroTik RouterOS, OSPF, BGP, MPLS, VLAN, VPN, Firewall
+</p>
+
+<p>2. PT.Natura Laboratories dan PT.Quantum Laboratories</p>
+<p>Jakarta, Indonesia</p>
+<p>Network Engineer | Juni 2020 - Maret 2023</p>
+<p>Tanggung Jawab:</p>
+<p></p>Konfigurasi dan maintenance router Cisco seri 2900/3900 dan switch Catalyst 2960/3650
+Setup dan manajemen VLAN, VTP, STP untuk jaringan 1000+ user
+Troubleshooting masalah konektivitas dan performa jaringan
+Dokumentasi topologi jaringan dan IP addressing</p>
+<p>Pencapaian:</p>
+<p>✅ Redesign jaringan LAN yang meningkatkan throughput 40%</p>
+✅ Implementasi QoS untuk prioritas traffic VoIP dan video conference
+✅ Otomasi backup konfigurasi perangkat menggunakan script Python
+✅ Training dan mentoring 3 junior technician
+Teknologi: Cisco Packet Tracer, Wireshark, SolarWinds, Python (Network Automation), DHCP, DNS, NAT
+3. PT MEDIA KOMUNIKASI DATA
+Surabaya, Indonesia
+IT Support & Network Technician | Januari 2017 - Mei 2019
+Tanggung Jawab:
+Instalasi dan konfigurasi perangkat jaringan (router, switch, access point)
+Cable management dan troubleshooting fisik jaringan
+Support teknis untuk 200+ user internal
+Maintenance server dan perangkat keras
+Pencapaian:
+✅ Migrasi jaringan dari 100Mbps ke 1Gbps backbone
+✅ Setup jaringan wireless untuk 5 lantai gedung kantor
+✅ Reduce response time troubleshooting dari 4 jam menjadi 1 jam
+✅ Implementasi sistem ticketing untuk IT support
+Teknologi: MikroTik hEX/hAP, Ubiquiti, Windows Server, Linux Basic, Active Directory
+PROYEK UNGGULAN
+📡 Proyek Implementasi Data Center - PT Teknologi Nusantara Sejahtera (2023)
+Role: Lead Network Engineer
+Deskripsi: Membangun infrastruktur jaringan data center baru dengan kapasitas 50 rack
+Hasil:
+Implementasi spine-leaf architecture dengan Cisco Nexus 9000
+Redundansi penuh dengan dual-core switch dan multi-path routing
+Network segmentation untuk security compliance ISO 27001
+🔄 Proyek Migrasi Multi-Site VPN - PT Digital Infrastruktur Indonesia (2021)
+Role: Network Engineer
+Deskripsi: Migrasi 12 cabang dari VPN tradisional ke SD-WAN
+Hasil:
+Pengurangan latency antar cabang sebesar 45%
+Biaya operasional turun 30% per tahun
+Zero downtime selama migrasi
+🔒 Proyek Network Security Hardening - PT Media Komunikasi Data (2018)
+Role: IT Support & Network Technician
+Deskripsi: Implementasi security baseline untuk seluruh perangkat jaringan
+Hasil:
+Port security dan 802.1X authentication
+ACL implementation untuk segmentasi jaringan
+Zero security breach dalam 2 tahun setelah implementasi
+📜 SERTIFIKASI
+Cisco Certified Network Associate (CCNA) - 2022
+MikroTik Certified Network Associate (MTCNA) - 2021
+MikroTik Certified Routing Engineer (MTCRE) - 2023
+ITIL Foundation v4 - 2022
+CompTIA Network+ - 2020
+🛠️ KEAHLIAN TEKNIS
+Networking:
+Routing: OSPF, BGP, EIGRP, Static Routing
+Switching: VLAN, VTP, STP/RSTP, EtherChannel
+Security: ACL, Port Security, VPN (IPSec, SSL), Firewall
+Protocols: TCP/IP, DHCP, DNS, NAT, SNMP, NTP
+Hardware:
+Cisco: Catalyst 2960/3650/9300, ISR 2900/3900/4000, Nexus 9000
+MikroTik: hEX, hAP, CCR, RB series
+Juniper: EX Series, SRX Series
+Tools & Software:
+Monitoring: PRTG, Zabbix, SolarWinds, Nagios
+Analysis: Wireshark, GNS3, EVE-NG, Packet Tracer
+Automation: Python, Ansible, Bash Scripting
+Documentation: Visio, Draw.io, Confluence
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact</h2>
+    <div class="card">
+        Email: hasanzafran94@gmail.com
+    </div>
+</section>
+
+</body>
+</html>
